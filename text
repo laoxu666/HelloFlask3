@@ -1,0 +1,13 @@
+### 蓝图，蓝本
+
+- 本意是对美好事物的向往，规划
+- flask中蓝图代表的是对程序的一个美好规划，视图函数
+- 使用流程
+  - 下载，安装
+    - pip install flask-blueprint
+  - 初始化
+    - 创建blueprint对象，  blue =Blueprint('BlueName', \__name__)
+    - 注册蓝图，app.register_blueprint
+  - 使用
+    - 使用和app一致
+    - @blue.route()
