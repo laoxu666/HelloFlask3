@@ -11,3 +11,30 @@
   - 使用
     - 使用和app一致
     - @blue.route()
+
+
+
+### Response
+
+1. content, code
+   - code 根据实际需要指定
+   - 要复合状态码规则
+   - 也可能用到反爬上
+2. render_template
+   - 使用完全同上
+   - Template()配合render(key=value, key1=value1)
+3. make_response
+  - 制作一个响应
+   - 返回的结果是Response的一个对象
+4. 直接实例化Response对象
+   - 最底层的方式
+5. 还可以使用重定向
+   - redirect(地址)
+   - url_for 反向解析获得
+6. 还可以返回json
+  - jsonify
+     - 支持直接的字典传输
+    - 构造使用key=value，key=value
+7. 还可以终止响应
+  - abort
+   - 只需传递终止的状态码
